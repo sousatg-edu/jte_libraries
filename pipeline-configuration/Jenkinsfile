@@ -1,13 +1,13 @@
-@merge pipeline {
+pipeline {
     agent none
-    @merge stages {
+    stages {
         stage("Example Build") {
             steps {
                 echo 'Example Build'
             }
         }
 
-        @override stage("Example Deploy") {
+        stage("Example Deploy") {
             steps {
                 echo 'Example Deploy'
             }
