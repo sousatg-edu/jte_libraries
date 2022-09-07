@@ -1,2 +1,16 @@
-build()
-static_code_analysis()
+pipeline {
+    agent none
+    stages {
+        stage("Example Build") {
+            steps {
+                echo 'Example Build'
+            }
+        }
+
+        stage("Example Deploy") {
+            steps {
+                echo 'Example Deploy'
+            }
+        }
+    }
+}
