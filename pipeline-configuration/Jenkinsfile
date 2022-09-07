@@ -7,7 +7,7 @@ pipeline {
             }
         }
 
-        stage("Example Deploy") {
+        @override stage("Example Deploy") {
             steps {
                 echo 'Example Deploy'
             }
