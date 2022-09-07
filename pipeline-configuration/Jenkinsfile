@@ -1,6 +1,6 @@
-@merge pipeline {
+pipeline {
     agent none
-    @merge stages {
+    stages {
         stage("Example Build") {
             steps {
                 echo 'Example Build'
